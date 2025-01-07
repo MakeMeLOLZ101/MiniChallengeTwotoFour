@@ -30,3 +30,4 @@ C:\Users\ianch\OneDrive\Documents\CODESTACK\Level 2 Assignments\MiniChallengeTwo
 C:\Users\ianch\OneDrive\Documents\CODESTACK\Level 2 Assignments\MiniChallengeTwotoFour\obj\Debug\net8.0\MiniChallengeTwotoFour.pdb
 C:\Users\ianch\OneDrive\Documents\CODESTACK\Level 2 Assignments\MiniChallengeTwotoFour\obj\Debug\net8.0\MiniChallengeTwotoFour.genruntimeconfig.cache
 C:\Users\ianch\OneDrive\Documents\CODESTACK\Level 2 Assignments\MiniChallengeTwotoFour\obj\Debug\net8.0\ref\MiniChallengeTwotoFour.dll
+C:\Users\ianch\OneDrive\Documents\CODESTACK\Level 2 Assignments\MiniChallengeTwotoFour\obj\Debug\net8.0\MiniChallengeTwotoFour.sourcelink.json
