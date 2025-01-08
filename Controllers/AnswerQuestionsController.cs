@@ -12,37 +12,25 @@ namespace MiniChallengeTwotoFour.Controllers
     public class AnswerQuestionsController : ControllerBase
     {
         
-        [HttpGet]  // First Question
-        public string GetQuestion()
+        private readonly AnswerQuestionsServices _answerQuestionsServices;
+
+    public AnswerQuestionsController(AnswerQuestionsServices answerQuestionsServices)
+    {
+        _answerQuestionsServices = answerQuestionsServices;
+    }
+
+    [HttpGet("{name}/{time}")]
+    public ActionResult<string> GetInfo(string name, string time)
+    {
+        if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(time))
         {
-            return "What is your name?";
+            return BadRequest("We need your name and wake-up time!!!");
         }
 
-        [HttpGet]
-        public string SecondQuestion()
-        {
-            return "What is your favorite color?";
-        }
+        var message = _answerQuestionsServices.WholeSentence(name, time);
+        return Ok(message);
+    }
 
-        [HttpGet("{name}")] // Second request handler
-        public string GetGreeting(string name)
-        {
-            if (string.IsNullOrEmpty(name))
-            {
-                return "Please provide a name!";
-            }
-
-        }
-
-        [HttpGet("{color}")]
-        public string GetColor(string color)
-        {
-            if(string.IsNullOrEmpty(color))
-            {
-                return "Please give a color or I toss you into the bottomless pit!";
-            }
-
-            return $"Hello, you {color} {name}!";
-        }
+        
     }
 }
