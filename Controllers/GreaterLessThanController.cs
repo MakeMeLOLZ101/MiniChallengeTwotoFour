@@ -8,9 +8,21 @@ using MiniChallengeTwotoFour.Services;
 namespace MiniChallengeTwotoFour.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class GreaterLessThanController : ControllerBase
     {
-        
+        private readonly GreaterLessThanServices _greaterLessThanServices;
+
+        public GreaterLessThanController(GreaterLessThanServices greaterLessThanservices)
+        {
+            _greaterLessThanServices = greaterLessThanservices;
+        }
+
+        [HttpGet]
+        [Route("compare/{firstNum}/{secondNum}")]
+        public string CompareNums(double firstNum, double secondNum)
+        {
+            return _greaterLessThanServices.CompareNums(firstNum, secondNum);
+        }
     }
 }
