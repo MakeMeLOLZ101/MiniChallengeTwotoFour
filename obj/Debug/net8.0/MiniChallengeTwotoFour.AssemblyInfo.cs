@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniChallengeTwotoFour")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e9202bf4e215fd764e2be720af88dedf9507a69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70e514c26910ac307c32eb1878f753622f641127")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniChallengeTwotoFour")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniChallengeTwotoFour")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
